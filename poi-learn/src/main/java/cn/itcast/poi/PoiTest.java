@@ -31,15 +31,15 @@ public class PoiTest {
             for (Cell cell : row) {
                 //获取每个单元格的类型
                 int cellType = cell.getCellType();
-                if(cellType == cell.CELL_TYPE_BLANK){
+                if(cellType == cell.CELL_T YPE_BLANK){
                     //System.out.println("空格类型");
                     System.out.print("\t");
                 }
-                if(cellType == cell.CELL_TYPE_NUMERIC){
+                if(cellType == cell.CELL_TYPE _NUMERIC){
                     //System.out.println("数字类型");
                     System.out.print(cell.getNumericCellValue()+"\t");
                 }
-                if(cellType == cell.CELL_TYPE_STRING){
+                if(cellType == cell.CELL_TYPE_S TRING){
                     //System.out.println("字符串类型");
                     System.out.print(cell.getStringCellValue()+"\t");
                 }
